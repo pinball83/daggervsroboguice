@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.patrickbaumann.roboguice3">
+
+    <application
+            android:label="@string/app_name"
+            android:name="com.patrickbaumann.roboguice3.RoboTestApplication">
+        <activity android:name="com.patrickbaumann.roboguice3.HelloAndroidActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="roboguice.modules" android:value="com.patrickbaumann.roboguice3.RoboTestModule,com.patrickbaumann.roboguice3.BaseRoboModule"/>
+        <meta-data android:name="roboguice.annotations.packages" android:value="com.patrickbaumann.roboguice3"/>
+    </application>
+
+</manifest>
+
